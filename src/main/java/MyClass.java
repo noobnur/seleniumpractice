@@ -1,5 +1,8 @@
 
+import org.openqa.selenium.By;
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 
 public class MyClass  {
@@ -9,27 +12,25 @@ public class MyClass  {
         System.setProperty("webdriver.chrome.driver","/Users/dayah/Desktop/Tools/chromedriver");
         WebDriver driver = new ChromeDriver();
 
-        String baseUrl = "https://noobnur.github.io/pocketmoney/";
-        String expectedTitle = "Pocket Money";
+        String baseUrl = "https://www.google.com/";
+        String expectedTitle = "helloworld - Google Search";
         String actualTitle = "";
 
-        // launch Fire fox and direct it to the Base URL
         driver.get(baseUrl);
 
-        // get the actual value of the title
+        WebElement myElement = driver.findElement(By.name("q"));
+        myElement.sendKeys("helloworld");
+        myElement.sendKeys(Keys.RETURN);
         actualTitle = driver.getTitle();
 
-        /*
-         * compare the actual title of the page with the expected one and print
-         * the result as "Passed" or "Failed"
-         */
+
         if (actualTitle.contentEquals(expectedTitle)){
             System.out.println("Test Passed!");
         } else {
             System.out.println("Test Failed");
+            System.out.println(actualTitle );
         }
 
-        //close Fire fox
         driver.close();
 
     }

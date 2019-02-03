@@ -33,6 +33,8 @@ public class basicStep extends BaseUtil {
         WebElement myElement = base.Driver.findElement(By.name("q"));
         myElement.sendKeys("helloworld");
 
+        System.out.println(items.get(0).search);
+
         Assert.assertEquals(items.get(0).search, "noobnur");
     }
 

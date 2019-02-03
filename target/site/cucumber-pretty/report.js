@@ -7,7 +7,7 @@ formatter.feature({
   "keyword": "Feature"
 });
 formatter.before({
-  "duration": 5162895833,
+  "duration": 4593754039,
   "status": "passed"
 });
 formatter.scenario({
@@ -56,32 +56,32 @@ formatter.match({
   "location": "basicStep.navToPage()"
 });
 formatter.result({
-  "duration": 1487491070,
+  "duration": 1353010781,
   "status": "passed"
 });
 formatter.match({
   "location": "basicStep.addToSeachInput(DataTable)"
 });
 formatter.result({
-  "duration": 289979084,
+  "duration": 189524408,
   "status": "passed"
 });
 formatter.match({
   "location": "basicStep.clickSearchButton()"
 });
 formatter.result({
-  "duration": 1771567324,
+  "duration": 1951874922,
   "status": "passed"
 });
 formatter.match({
   "location": "basicStep.getListOfResults()"
 });
 formatter.result({
-  "duration": 7821334,
+  "duration": 11410826,
   "status": "passed"
 });
 formatter.after({
-  "duration": 188545,
+  "duration": 230004,
   "status": "passed"
 });
 });

@@ -3,39 +3,61 @@
     "line": 1,
     "elements": [
       {
+        "before": [
+          {
+            "result": {
+              "duration": 5162895833,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hook.InitializeTest()"
+            }
+          }
+        ],
         "line": 4,
         "name": "Make a basic search on google search bar",
         "description": "",
         "id": "loginfeature;make-a-basic-search-on-google-search-bar",
+        "after": [
+          {
+            "result": {
+              "duration": 188545,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hook.TearDownTest(Scenario)"
+            }
+          }
+        ],
         "type": "scenario",
         "keyword": "Scenario",
         "steps": [
           {
             "result": {
-              "duration": 329379680,
+              "duration": 1487491070,
               "status": "passed"
             },
             "line": 5,
             "name": "I navigate to the main search page",
             "match": {
-              "location": "basicStep.i_navigate_to_the_main_search_page()"
+              "location": "basicStep.navToPage()"
             },
             "keyword": "Given "
           },
           {
             "result": {
-              "duration": 3551419,
+              "duration": 289979084,
               "status": "passed"
             },
             "line": 6,
             "name": "I enter the following for Search",
             "match": {
-              "location": "basicStep.i_enter_the_following_for_Search(DataTable)"
+              "location": "basicStep.addToSeachInput(DataTable)"
             },
             "rows": [
               {
                 "cells": [
-                  "tosearch"
+                  "search"
                 ],
                 "line": 7
               },
@@ -50,25 +72,25 @@
           },
           {
             "result": {
-              "duration": 296355,
+              "duration": 1771567324,
               "status": "passed"
             },
             "line": 9,
             "name": "I click search button",
             "match": {
-              "location": "basicStep.i_click_search_button()"
+              "location": "basicStep.clickSearchButton()"
             },
             "keyword": "And "
           },
           {
             "result": {
-              "duration": 49697,
+              "duration": 7821334,
               "status": "passed"
             },
             "line": 10,
-            "name": "I should see the search list p",
+            "name": "I should see the search list page",
             "match": {
-              "location": "basicStep.i_should_see_the_search_list_p()"
+              "location": "basicStep.getListOfResults()"
             },
             "keyword": "Then "
           }

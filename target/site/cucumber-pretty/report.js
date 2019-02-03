@@ -6,6 +6,10 @@ formatter.feature({
   "id": "loginfeature",
   "keyword": "Feature"
 });
+formatter.before({
+  "duration": 5162895833,
+  "status": "passed"
+});
 formatter.scenario({
   "line": 4,
   "name": "Make a basic search on google search bar",
@@ -25,7 +29,7 @@ formatter.step({
   "rows": [
     {
       "cells": [
-        "tosearch"
+        "search"
       ],
       "line": 7
     },
@@ -45,35 +49,39 @@ formatter.step({
 });
 formatter.step({
   "line": 10,
-  "name": "I should see the search list p",
+  "name": "I should see the search list page",
   "keyword": "Then "
 });
 formatter.match({
-  "location": "basicStep.i_navigate_to_the_main_search_page()"
+  "location": "basicStep.navToPage()"
 });
 formatter.result({
-  "duration": 329379680,
+  "duration": 1487491070,
   "status": "passed"
 });
 formatter.match({
-  "location": "basicStep.i_enter_the_following_for_Search(DataTable)"
+  "location": "basicStep.addToSeachInput(DataTable)"
 });
 formatter.result({
-  "duration": 3551419,
+  "duration": 289979084,
   "status": "passed"
 });
 formatter.match({
-  "location": "basicStep.i_click_search_button()"
+  "location": "basicStep.clickSearchButton()"
 });
 formatter.result({
-  "duration": 296355,
+  "duration": 1771567324,
   "status": "passed"
 });
 formatter.match({
-  "location": "basicStep.i_should_see_the_search_list_p()"
+  "location": "basicStep.getListOfResults()"
 });
 formatter.result({
-  "duration": 49697,
+  "duration": 7821334,
+  "status": "passed"
+});
+formatter.after({
+  "duration": 188545,
   "status": "passed"
 });
 });

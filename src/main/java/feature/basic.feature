@@ -1,5 +1,5 @@
-Feature: LoginFeature
-  This feature deals with the basic usage of the
+Feature: Search
+  This feature deals with the basic usage of the search bar
 
   Scenario: Make a basic search on google search bar
     Given I navigate to the main search page

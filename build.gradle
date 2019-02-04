@@ -15,6 +15,5 @@ dependencies {
     compile "info.cukes:cucumber-java:1.2.5"
     compile group: 'info.cukes', name: 'cucumber-junit', version: '1.2.5'
     compile group: 'info.cukes', name: 'cucumber-picocontainer', version: '1.2.5'
-    compile group: 'info.cukes', name: 'cucumber-testng', version: '1.2.5'
     compile files('/Users/dayah/Desktop/Tools/selenium-java-3.141.59')
 }

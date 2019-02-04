@@ -3,12 +3,11 @@ package steps;
 import Base.BaseUtil;
 import cucumber.api.DataTable;
 import cucumber.api.java.en.*;
+import org.junit.Assert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
-import org.testng.Assert;
 
-import java.util.ArrayList;
 import java.util.List;
 
 public class basicStep extends BaseUtil {

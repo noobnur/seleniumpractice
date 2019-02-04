@@ -6,7 +6,7 @@
         "before": [
           {
             "result": {
-              "duration": 5030876316,
+              "duration": 5203052440,
               "status": "passed"
             },
             "match": {
@@ -17,11 +17,11 @@
         "line": 4,
         "name": "Make a basic search on google search bar",
         "description": "",
-        "id": "loginfeature;make-a-basic-search-on-google-search-bar",
+        "id": "search;make-a-basic-search-on-google-search-bar",
         "after": [
           {
             "result": {
-              "duration": 134725535,
+              "duration": 191728661,
               "status": "passed"
             },
             "match": {
@@ -34,7 +34,7 @@
         "steps": [
           {
             "result": {
-              "duration": 1497826288,
+              "duration": 1818105376,
               "status": "passed"
             },
             "line": 5,
@@ -46,7 +46,7 @@
           },
           {
             "result": {
-              "duration": 183461563,
+              "duration": 205741180,
               "status": "passed"
             },
             "line": 6,
@@ -72,7 +72,7 @@
           },
           {
             "result": {
-              "duration": 1583699773,
+              "duration": 1301748118,
               "status": "passed"
             },
             "line": 9,
@@ -84,8 +84,9 @@
           },
           {
             "result": {
-              "duration": 12164403,
-              "status": "passed"
+              "duration": 19011935,
+              "error_message": "org.junit.ComparisonFailure: expected:\u003chelloworl[d] - Google Search\u003e but was:\u003chelloworl[] - Google Search\u003e\n\tat org.junit.Assert.assertEquals(Assert.java:115)\n\tat org.junit.Assert.assertEquals(Assert.java:144)\n\tat steps.basicStep.getListOfResults(basicStep.java:45)\n\tat ✽.Then I should see the search list page(basic.feature:10)\n",
+              "status": "failed"
             },
             "line": 10,
             "name": "I should see the search list page",
@@ -97,9 +98,9 @@
         ]
       }
     ],
-    "name": "LoginFeature",
-    "description": "This feature deals with the basic usage of the",
-    "id": "loginfeature",
+    "name": "Search",
+    "description": "This feature deals with the basic usage of the search bar",
+    "id": "search",
     "keyword": "Feature",
     "uri": "basic.feature"
   }

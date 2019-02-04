@@ -1,20 +1,20 @@
 $(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("basic.feature");
 formatter.feature({
   "line": 1,
-  "name": "LoginFeature",
-  "description": "This feature deals with the basic usage of the",
-  "id": "loginfeature",
+  "name": "Search",
+  "description": "This feature deals with the basic usage of the search bar",
+  "id": "search",
   "keyword": "Feature"
 });
 formatter.before({
-  "duration": 5030876316,
+  "duration": 5203052440,
   "status": "passed"
 });
 formatter.scenario({
   "line": 4,
   "name": "Make a basic search on google search bar",
   "description": "",
-  "id": "loginfeature;make-a-basic-search-on-google-search-bar",
+  "id": "search;make-a-basic-search-on-google-search-bar",
   "type": "scenario",
   "keyword": "Scenario"
 });
@@ -56,32 +56,33 @@ formatter.match({
   "location": "basicStep.navToPage()"
 });
 formatter.result({
-  "duration": 1497826288,
+  "duration": 1818105376,
   "status": "passed"
 });
 formatter.match({
   "location": "basicStep.addToSeachInput(DataTable)"
 });
 formatter.result({
-  "duration": 183461563,
+  "duration": 205741180,
   "status": "passed"
 });
 formatter.match({
   "location": "basicStep.clickSearchButton()"
 });
 formatter.result({
-  "duration": 1583699773,
+  "duration": 1301748118,
   "status": "passed"
 });
 formatter.match({
   "location": "basicStep.getListOfResults()"
 });
 formatter.result({
-  "duration": 12164403,
-  "status": "passed"
+  "duration": 19011935,
+  "error_message": "org.junit.ComparisonFailure: expected:\u003chelloworl[d] - Google Search\u003e but was:\u003chelloworl[] - Google Search\u003e\n\tat org.junit.Assert.assertEquals(Assert.java:115)\n\tat org.junit.Assert.assertEquals(Assert.java:144)\n\tat steps.basicStep.getListOfResults(basicStep.java:45)\n\tat ✽.Then I should see the search list page(basic.feature:10)\n",
+  "status": "failed"
 });
 formatter.after({
-  "duration": 134725535,
+  "duration": 191728661,
   "status": "passed"
 });
 });

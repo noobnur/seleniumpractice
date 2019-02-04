@@ -7,7 +7,7 @@ formatter.feature({
   "keyword": "Feature"
 });
 formatter.before({
-  "duration": 4593754039,
+  "duration": 5030876316,
   "status": "passed"
 });
 formatter.scenario({
@@ -35,7 +35,7 @@ formatter.step({
     },
     {
       "cells": [
-        "noobnur"
+        "helloworld"
       ],
       "line": 8
     }
@@ -56,32 +56,32 @@ formatter.match({
   "location": "basicStep.navToPage()"
 });
 formatter.result({
-  "duration": 1353010781,
+  "duration": 1497826288,
   "status": "passed"
 });
 formatter.match({
   "location": "basicStep.addToSeachInput(DataTable)"
 });
 formatter.result({
-  "duration": 189524408,
+  "duration": 183461563,
   "status": "passed"
 });
 formatter.match({
   "location": "basicStep.clickSearchButton()"
 });
 formatter.result({
-  "duration": 1951874922,
+  "duration": 1583699773,
   "status": "passed"
 });
 formatter.match({
   "location": "basicStep.getListOfResults()"
 });
 formatter.result({
-  "duration": 11410826,
+  "duration": 12164403,
   "status": "passed"
 });
 formatter.after({
-  "duration": 230004,
+  "duration": 134725535,
   "status": "passed"
 });
 });

@@ -27,15 +27,10 @@ public class basicStep extends BaseUtil {
 
     @Given("^I enter the following for Search$")
     public void addToSeachInput(DataTable table) throws Throwable {
-        List<Input> items =  new ArrayList<Input>();
-        items = table.asList(Input.class);
+        List<Input> items =  table.asList(Input.class);
 
         WebElement myElement = base.Driver.findElement(By.name("q"));
-        myElement.sendKeys("helloworld");
-
-        System.out.println(items.get(0).search);
-
-        Assert.assertEquals(items.get(0).search, "noobnur");
+        myElement.sendKeys(items.get(0).search);
     }
 
     @Given("^I click search button$")

@@ -4,7 +4,7 @@ Feature: LoginFeature
   Scenario: Make a basic search on google search bar
     Given I navigate to the main search page
     And I enter the following for Search
-      | search  |
-      | noobnur   |
+      | search       |
+      | helloworld   |
     And I click search button
     Then I should see the search list page

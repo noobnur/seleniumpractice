@@ -39,7 +39,7 @@ public class basicStep extends BaseUtil {
 
     @Then("^I should see the search list page$")
     public void getListOfResults() throws Throwable {
-        String expectedTitle = "helloworld - Google Search";
+        String expectedTitle = "helloworld - Google Serch";
         String actualTitle = base.Driver.getTitle();
 
         Assert.assertEquals(actualTitle, expectedTitle);

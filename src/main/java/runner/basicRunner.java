@@ -6,7 +6,7 @@ import cucumber.api.junit.Cucumber;
 
 @RunWith(Cucumber.class)
 @CucumberOptions(
-        features = {"src/main/java/feature"} ,
+        features = {"src/main/java/feature/basic.feature"} ,
         format = {"json:target/cucumber.json","html:target/site/cucumber-pretty"},
         glue = "steps")
 public class basicRunner {

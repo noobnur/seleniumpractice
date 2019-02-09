@@ -1,4 +1,4 @@
-$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("basic.feature");
+$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("src/main/java/feature/basic.feature");
 formatter.feature({
   "line": 1,
   "name": "Search",
@@ -7,7 +7,7 @@ formatter.feature({
   "keyword": "Feature"
 });
 formatter.before({
-  "duration": 5203052440,
+  "duration": 3988364314,
   "status": "passed"
 });
 formatter.scenario({
@@ -29,12 +29,14 @@ formatter.step({
   "rows": [
     {
       "cells": [
+        "website",
         "search"
       ],
       "line": 7
     },
     {
       "cells": [
+        "https://www.google.com/",
         "helloworld"
       ],
       "line": 8
@@ -56,33 +58,32 @@ formatter.match({
   "location": "basicStep.navToPage()"
 });
 formatter.result({
-  "duration": 1818105376,
+  "duration": 1631083874,
   "status": "passed"
 });
 formatter.match({
   "location": "basicStep.addToSeachInput(DataTable)"
 });
 formatter.result({
-  "duration": 205741180,
+  "duration": 298965683,
   "status": "passed"
 });
 formatter.match({
   "location": "basicStep.clickSearchButton()"
 });
 formatter.result({
-  "duration": 1301748118,
+  "duration": 1529100582,
   "status": "passed"
 });
 formatter.match({
   "location": "basicStep.getListOfResults()"
 });
 formatter.result({
-  "duration": 19011935,
-  "error_message": "org.junit.ComparisonFailure: expected:\u003chelloworl[d] - Google Search\u003e but was:\u003chelloworl[] - Google Search\u003e\n\tat org.junit.Assert.assertEquals(Assert.java:115)\n\tat org.junit.Assert.assertEquals(Assert.java:144)\n\tat steps.basicStep.getListOfResults(basicStep.java:45)\n\tat ✽.Then I should see the search list page(basic.feature:10)\n",
-  "status": "failed"
+  "duration": 11510248,
+  "status": "passed"
 });
 formatter.after({
-  "duration": 191728661,
+  "duration": 130089752,
   "status": "passed"
 });
 });

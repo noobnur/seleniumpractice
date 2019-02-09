@@ -4,7 +4,7 @@ Feature: Search
   Scenario: Make a basic search on google search bar
     Given I navigate to the main search page
     And I enter the following for Search
-      | search       |
-      | helloworld   |
+      | website                 | search       |
+      | https://www.google.com/ | helloworld   |
     And I click search button
     Then I should see the search list page

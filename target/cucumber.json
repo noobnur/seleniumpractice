@@ -6,7 +6,7 @@
         "before": [
           {
             "result": {
-              "duration": 5203052440,
+              "duration": 3988364314,
               "status": "passed"
             },
             "match": {
@@ -21,7 +21,7 @@
         "after": [
           {
             "result": {
-              "duration": 191728661,
+              "duration": 130089752,
               "status": "passed"
             },
             "match": {
@@ -34,7 +34,7 @@
         "steps": [
           {
             "result": {
-              "duration": 1818105376,
+              "duration": 1631083874,
               "status": "passed"
             },
             "line": 5,
@@ -46,7 +46,7 @@
           },
           {
             "result": {
-              "duration": 205741180,
+              "duration": 298965683,
               "status": "passed"
             },
             "line": 6,
@@ -57,12 +57,14 @@
             "rows": [
               {
                 "cells": [
+                  "website",
                   "search"
                 ],
                 "line": 7
               },
               {
                 "cells": [
+                  "https://www.google.com/",
                   "helloworld"
                 ],
                 "line": 8
@@ -72,7 +74,7 @@
           },
           {
             "result": {
-              "duration": 1301748118,
+              "duration": 1529100582,
               "status": "passed"
             },
             "line": 9,
@@ -84,9 +86,8 @@
           },
           {
             "result": {
-              "duration": 19011935,
-              "error_message": "org.junit.ComparisonFailure: expected:\u003chelloworl[d] - Google Search\u003e but was:\u003chelloworl[] - Google Search\u003e\n\tat org.junit.Assert.assertEquals(Assert.java:115)\n\tat org.junit.Assert.assertEquals(Assert.java:144)\n\tat steps.basicStep.getListOfResults(basicStep.java:45)\n\tat ✽.Then I should see the search list page(basic.feature:10)\n",
-              "status": "failed"
+              "duration": 11510248,
+              "status": "passed"
             },
             "line": 10,
             "name": "I should see the search list page",
@@ -102,6 +103,6 @@
     "description": "This feature deals with the basic usage of the search bar",
     "id": "search",
     "keyword": "Feature",
-    "uri": "basic.feature"
+    "uri": "src/main/java/feature/basic.feature"
   }
 ]

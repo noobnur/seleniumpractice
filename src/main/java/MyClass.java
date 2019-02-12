@@ -26,15 +26,18 @@ public class MyClass  {
 
 
         // These are relative paths
-        driver.findElement(By.xpath("(//DIV[@class='quantumWizTogglePaperradioOffRadio exportOuterCircle'])[1]")).click();
-        driver.findElement(By.xpath("(//DIV[@class='quantumWizTogglePapercheckboxInnerBox exportInnerBox'])[2]")).click();
+        driver.findElement(By.xpath("(//DIV[@role='radio' and @data-value='Option 1'])")).click();
+        driver.findElement(By.xpath("(//DIV[@role='checkbox' and @aria-label='Option 2'])")).click();
 
         driver.findElement(By.xpath("//INPUT[@type='text']")).sendKeys("This is my short answer");
-        driver.findElement(By.xpath("//TEXTAREA[@class='quantumWizTextinputPapertextareaInput exportTextarea']")).sendKeys("This is my long long looooonnggg answer");
+        driver.findElement(By.xpath("//TEXTAREA[@aria-label='Long answer']")).sendKeys(
+                "This is my long long looooonnggg answer. This time round we have changed the xpaths to something more readable." +
+                        "But best is if we use ids most likely. Now the roles (radio and checkbox) is useful only if there's only one of each. Might still work " +
+                        "but if there's more exact same data-value then we'd have a problem");
 
-        driver.findElement(By.xpath("(//DIV[@class='quantumWizTogglePaperradioOffRadio exportOuterCircle'])[3]")).click();
+//        driver.findElement(By.xpath("(//DIV[@class='quantumWizTogglePaperradioOffRadio exportOuterCircle'])[3]")).click();
 
-        driver.findElement(By.xpath("//SPAN[@class='quantumWizButtonPaperbuttonLabel exportLabel'][text()='Submit']")).click();
+        driver.findElement(By.xpath("//SPAN[text()='Submit']")).click();
 
 //        myElement.sendKeys("helloworld");
 //        myElement.sendKeys(Keys.RETURN);
@@ -48,7 +51,7 @@ public class MyClass  {
 //            System.out.println(actualTitle );
 //        }
 
-        driver.close();
+//        driver.close();
 
     }
 

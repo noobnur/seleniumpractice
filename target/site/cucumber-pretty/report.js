@@ -1,43 +1,47 @@
-$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("src/main/java/feature/basic.feature");
+$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("src/main/java/feature/fillOutForms.feature");
 formatter.feature({
   "line": 1,
-  "name": "Search",
-  "description": "This feature deals with the basic usage of the search bar",
-  "id": "search",
+  "name": "Forms",
+  "description": "This feature deals with the basic usage forms input.",
+  "id": "forms",
   "keyword": "Feature"
 });
 formatter.before({
-  "duration": 3988364314,
+  "duration": 5957178575,
   "status": "passed"
 });
 formatter.scenario({
   "line": 4,
-  "name": "Make a basic search on google search bar",
+  "name": "Fill out forms in google forms",
   "description": "",
-  "id": "search;make-a-basic-search-on-google-search-bar",
+  "id": "forms;fill-out-forms-in-google-forms",
   "type": "scenario",
   "keyword": "Scenario"
 });
 formatter.step({
   "line": 5,
-  "name": "I navigate to the main search page",
+  "name": "I navigate to the main form page here: \"https://goo.gl/qK4fDy\"",
   "keyword": "Given "
 });
 formatter.step({
   "line": 6,
-  "name": "I enter the following for Search",
+  "name": "I enter the following",
   "rows": [
     {
       "cells": [
-        "website",
-        "search"
+        "radio",
+        "checkbox",
+        "Short answer",
+        "Long answer"
       ],
       "line": 7
     },
     {
       "cells": [
-        "https://www.google.com/",
-        "helloworld"
+        "Option 1",
+        "Option 3",
+        "This is my short cucumber answer",
+        "This is my long long looooonnggg cucumber answer"
       ],
       "line": 8
     }
@@ -46,44 +50,56 @@ formatter.step({
 });
 formatter.step({
   "line": 9,
-  "name": "I click search button",
+  "name": "I click \"Submit\" button",
   "keyword": "And "
 });
 formatter.step({
   "line": 10,
-  "name": "I should see the search list page",
+  "name": "I should see the submitted page",
   "keyword": "Then "
 });
 formatter.match({
-  "location": "basicStep.navToPage()"
+  "arguments": [
+    {
+      "val": "https://goo.gl/qK4fDy",
+      "offset": 40
+    }
+  ],
+  "location": "formStep.navigateToFormPage(String)"
 });
 formatter.result({
-  "duration": 1631083874,
+  "duration": 3594919246,
   "status": "passed"
 });
 formatter.match({
-  "location": "basicStep.addToSeachInput(DataTable)"
+  "location": "formStep.fillOutForm(DataTable)"
 });
 formatter.result({
-  "duration": 298965683,
+  "duration": 1144373153,
   "status": "passed"
 });
 formatter.match({
-  "location": "basicStep.clickSearchButton()"
+  "arguments": [
+    {
+      "val": "Submit",
+      "offset": 9
+    }
+  ],
+  "location": "formStep.submitForm(String)"
 });
 formatter.result({
-  "duration": 1529100582,
+  "duration": 789921288,
   "status": "passed"
 });
 formatter.match({
-  "location": "basicStep.getListOfResults()"
+  "location": "formStep.getResponsePage()"
 });
 formatter.result({
-  "duration": 11510248,
+  "duration": 56157929,
   "status": "passed"
 });
 formatter.after({
-  "duration": 130089752,
+  "duration": 181047759,
   "status": "passed"
 });
 });

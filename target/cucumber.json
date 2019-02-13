@@ -6,7 +6,7 @@
         "before": [
           {
             "result": {
-              "duration": 5957178575,
+              "duration": 4141142708,
               "status": "passed"
             },
             "match": {
@@ -21,7 +21,7 @@
         "after": [
           {
             "result": {
-              "duration": 181047759,
+              "duration": 284536,
               "status": "passed"
             },
             "match": {
@@ -34,7 +34,7 @@
         "steps": [
           {
             "result": {
-              "duration": 3594919246,
+              "duration": 3338453645,
               "status": "passed"
             },
             "line": 5,
@@ -52,7 +52,7 @@
           },
           {
             "result": {
-              "duration": 1144373153,
+              "duration": 15637505740,
               "status": "passed"
             },
             "line": 6,
@@ -74,20 +74,74 @@
                 "cells": [
                   "Option 1",
                   "Option 3",
-                  "This is my short cucumber answer",
-                  "This is my long long looooonnggg cucumber answer"
+                  "This is my short cucumber answer hello",
+                  "This is my long long looooonnggg cucumber answer try again"
                 ],
                 "line": 8
+              },
+              {
+                "cells": [
+                  "Option 2",
+                  "Option 2",
+                  "This is my short cucumber answer wassup",
+                  "This is my long long looooonnggg cucumber answer"
+                ],
+                "line": 9
+              },
+              {
+                "cells": [
+                  "Option 3",
+                  "Option 1",
+                  "This is my short cucumber answer shortt",
+                  "This is my long long looooonnggg cucumber answer"
+                ],
+                "line": 10
+              },
+              {
+                "cells": [
+                  "Option 1",
+                  "Option 1",
+                  "This is my short cucumber answer mehhh",
+                  "This is my long long looooonnggg cucumber answer"
+                ],
+                "line": 11
+              },
+              {
+                "cells": [
+                  "Option 2",
+                  "Option 2",
+                  "This is my short cucumber answer I ate",
+                  "This is my long long looooonnggg cucumber answer"
+                ],
+                "line": 12
+              },
+              {
+                "cells": [
+                  "Option 3",
+                  "Option 3",
+                  "This is my short cucumber answer too muc",
+                  "This is my long long looooonnggg cucumber answer"
+                ],
+                "line": 13
+              },
+              {
+                "cells": [
+                  "Option 1",
+                  "Option 3",
+                  "This is my short cucumber answer h today",
+                  "This is my long long looooonnggg cucumber answer"
+                ],
+                "line": 14
               }
             ],
             "keyword": "And "
           },
           {
             "result": {
-              "duration": 789921288,
+              "duration": 639179809,
               "status": "passed"
             },
-            "line": 9,
+            "line": 15,
             "name": "I click \"Submit\" button",
             "match": {
               "arguments": [
@@ -102,10 +156,10 @@
           },
           {
             "result": {
-              "duration": 56157929,
+              "duration": 38913127,
               "status": "passed"
             },
-            "line": 10,
+            "line": 16,
             "name": "I should see the submitted page",
             "match": {
               "location": "formStep.getResponsePage()"

@@ -27,16 +27,27 @@ public class formStep extends BaseUtil {
     @Given("^I enter the following$")
     public void fillOutForm(DataTable table) throws Throwable {
         List<Map<String, String>> list = table.asMaps(String.class, String.class);
-        String radioInput = list.get(0).get("radio");
-        String checkboxInput = list.get(0).get("checkbox");
-        String shortAnsInput = list.get(0).get("Short answer");
-        String longAnsInput = list.get(0).get("Long answer");
 
-        base.Driver.findElement(By.xpath("(//DIV[@role='radio' and @data-value='"+radioInput+"'])")).click();
-        base.Driver.findElement(By.xpath("(//DIV[@role='checkbox' and @aria-label='"+checkboxInput+"'])")).click();
+//        int i = 0;
+        for(int i = 0; i < list.size(); i ++) {
+            String radioInput = list.get(i).get("radio");
+            String checkboxInput = list.get(i).get("checkbox");
+            String shortAnsInput = list.get(i).get("Short answer");
+            String longAnsInput = list.get(i).get("Long answer");
 
-        base.Driver.findElement(By.xpath("//INPUT[@type='text']")).sendKeys(shortAnsInput);
-        base.Driver.findElement(By.xpath("//TEXTAREA[@aria-label='Long answer']")).sendKeys(longAnsInput);
+            base.Driver.findElement(By.xpath("(//DIV[@role='radio' and @data-value='" + radioInput + "'])")).click();
+            base.Driver.findElement(By.xpath("(//DIV[@role='checkbox' and @aria-label='" + checkboxInput + "'])")).click();
+
+            base.Driver.findElement(By.xpath("//INPUT[@type='text']")).sendKeys(shortAnsInput);
+            base.Driver.findElement(By.xpath("//TEXTAREA[@aria-label='Long answer']")).sendKeys(longAnsInput);
+
+            if (i < list.size()-1) {
+                String btn = "Submit";
+                base.Driver.findElement(By.xpath("//SPAN[text()='" + btn + "']")).click();
+
+                base.Driver.findElement(By.xpath("//A[@href='https://docs.google.com/forms/d/e/1FAIpQLSezE_NGzI-f92U8OVk-tonitgNzmJwAidtfLAueJakTldce-g/viewform?usp=form_confirm'][text()='Submit another response']")).click();
+            }
+        }
 
     }
 
@@ -47,6 +58,6 @@ public class formStep extends BaseUtil {
 
     @Then("^I should see the submitted page$")
     public void getResponsePage() throws Throwable {
-        Assert.assertTrue(base.Driver.getPageSource().contains("Your response has been recorded."));
+        Assert.assertTrue(base.Driver.getPageSource().contains("Test Selenium Forms"));
     }
 }

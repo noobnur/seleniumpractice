@@ -7,7 +7,7 @@ formatter.feature({
   "keyword": "Feature"
 });
 formatter.before({
-  "duration": 5957178575,
+  "duration": 4141142708,
   "status": "passed"
 });
 formatter.scenario({
@@ -40,21 +40,75 @@ formatter.step({
       "cells": [
         "Option 1",
         "Option 3",
-        "This is my short cucumber answer",
-        "This is my long long looooonnggg cucumber answer"
+        "This is my short cucumber answer hello",
+        "This is my long long looooonnggg cucumber answer try again"
       ],
       "line": 8
+    },
+    {
+      "cells": [
+        "Option 2",
+        "Option 2",
+        "This is my short cucumber answer wassup",
+        "This is my long long looooonnggg cucumber answer"
+      ],
+      "line": 9
+    },
+    {
+      "cells": [
+        "Option 3",
+        "Option 1",
+        "This is my short cucumber answer shortt",
+        "This is my long long looooonnggg cucumber answer"
+      ],
+      "line": 10
+    },
+    {
+      "cells": [
+        "Option 1",
+        "Option 1",
+        "This is my short cucumber answer mehhh",
+        "This is my long long looooonnggg cucumber answer"
+      ],
+      "line": 11
+    },
+    {
+      "cells": [
+        "Option 2",
+        "Option 2",
+        "This is my short cucumber answer I ate",
+        "This is my long long looooonnggg cucumber answer"
+      ],
+      "line": 12
+    },
+    {
+      "cells": [
+        "Option 3",
+        "Option 3",
+        "This is my short cucumber answer too muc",
+        "This is my long long looooonnggg cucumber answer"
+      ],
+      "line": 13
+    },
+    {
+      "cells": [
+        "Option 1",
+        "Option 3",
+        "This is my short cucumber answer h today",
+        "This is my long long looooonnggg cucumber answer"
+      ],
+      "line": 14
     }
   ],
   "keyword": "And "
 });
 formatter.step({
-  "line": 9,
+  "line": 15,
   "name": "I click \"Submit\" button",
   "keyword": "And "
 });
 formatter.step({
-  "line": 10,
+  "line": 16,
   "name": "I should see the submitted page",
   "keyword": "Then "
 });
@@ -68,14 +122,14 @@ formatter.match({
   "location": "formStep.navigateToFormPage(String)"
 });
 formatter.result({
-  "duration": 3594919246,
+  "duration": 3338453645,
   "status": "passed"
 });
 formatter.match({
   "location": "formStep.fillOutForm(DataTable)"
 });
 formatter.result({
-  "duration": 1144373153,
+  "duration": 15637505740,
   "status": "passed"
 });
 formatter.match({
@@ -88,18 +142,18 @@ formatter.match({
   "location": "formStep.submitForm(String)"
 });
 formatter.result({
-  "duration": 789921288,
+  "duration": 639179809,
   "status": "passed"
 });
 formatter.match({
   "location": "formStep.getResponsePage()"
 });
 formatter.result({
-  "duration": 56157929,
+  "duration": 38913127,
   "status": "passed"
 });
 formatter.after({
-  "duration": 181047759,
+  "duration": 284536,
   "status": "passed"
 });
 });

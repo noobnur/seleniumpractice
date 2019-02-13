@@ -6,6 +6,8 @@ import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import org.junit.Assert;
 import org.openqa.selenium.By;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.Select;
 
 import java.util.List;
 import java.util.Map;
@@ -34,6 +36,7 @@ public class formStep extends BaseUtil {
             String checkboxInput = list.get(i).get("checkbox");
             String shortAnsInput = list.get(i).get("Short answer");
             String longAnsInput = list.get(i).get("Long answer");
+            String dropdownInput = list.get(i).get("Dropdown");
 
             base.Driver.findElement(By.xpath("(//DIV[@role='radio' and @data-value='" + radioInput + "'])")).click();
             base.Driver.findElement(By.xpath("(//DIV[@role='checkbox' and @aria-label='" + checkboxInput + "'])")).click();
@@ -41,6 +44,10 @@ public class formStep extends BaseUtil {
             base.Driver.findElement(By.xpath("//INPUT[@type='text']")).sendKeys(shortAnsInput);
             base.Driver.findElement(By.xpath("//TEXTAREA[@aria-label='Long answer']")).sendKeys(longAnsInput);
 
+            base.Driver.findElement(By.xpath("//CONTENT[@class='quantumWizMenuPaperselectContent exportContent'][text()='Choose']")).click();
+            base.Driver.findElement(By.xpath("//DIV[@data-value='"+dropdownInput+"']"));
+
+            System.out.println(i + "gg to submit");
             if (i < list.size()-1) {
                 String btn = "Submit";
                 base.Driver.findElement(By.xpath("//SPAN[text()='" + btn + "']")).click();

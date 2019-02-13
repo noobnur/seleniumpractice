@@ -7,7 +7,7 @@ formatter.feature({
   "keyword": "Feature"
 });
 formatter.before({
-  "duration": 4141142708,
+  "duration": 3544322512,
   "status": "passed"
 });
 formatter.scenario({
@@ -32,7 +32,8 @@ formatter.step({
         "radio",
         "checkbox",
         "Short answer",
-        "Long answer"
+        "Long answer",
+        "Dropdown"
       ],
       "line": 7
     },
@@ -41,7 +42,8 @@ formatter.step({
         "Option 1",
         "Option 3",
         "This is my short cucumber answer hello",
-        "This is my long long looooonnggg cucumber answer try again"
+        "This is my long long looooonnggg cucumber answer try again",
+        "Dropdown 1"
       ],
       "line": 8
     },
@@ -50,7 +52,8 @@ formatter.step({
         "Option 2",
         "Option 2",
         "This is my short cucumber answer wassup",
-        "This is my long long looooonnggg cucumber answer"
+        "This is my long long looooonnggg cucumber answer",
+        "Dropdown 2"
       ],
       "line": 9
     },
@@ -59,56 +62,21 @@ formatter.step({
         "Option 3",
         "Option 1",
         "This is my short cucumber answer shortt",
-        "This is my long long looooonnggg cucumber answer"
+        "This is my long long looooonnggg cucumber answer",
+        "Dropdown 3"
       ],
       "line": 10
-    },
-    {
-      "cells": [
-        "Option 1",
-        "Option 1",
-        "This is my short cucumber answer mehhh",
-        "This is my long long looooonnggg cucumber answer"
-      ],
-      "line": 11
-    },
-    {
-      "cells": [
-        "Option 2",
-        "Option 2",
-        "This is my short cucumber answer I ate",
-        "This is my long long looooonnggg cucumber answer"
-      ],
-      "line": 12
-    },
-    {
-      "cells": [
-        "Option 3",
-        "Option 3",
-        "This is my short cucumber answer too muc",
-        "This is my long long looooonnggg cucumber answer"
-      ],
-      "line": 13
-    },
-    {
-      "cells": [
-        "Option 1",
-        "Option 3",
-        "This is my short cucumber answer h today",
-        "This is my long long looooonnggg cucumber answer"
-      ],
-      "line": 14
     }
   ],
   "keyword": "And "
 });
 formatter.step({
-  "line": 15,
+  "line": 11,
   "name": "I click \"Submit\" button",
   "keyword": "And "
 });
 formatter.step({
-  "line": 16,
+  "line": 12,
   "name": "I should see the submitted page",
   "keyword": "Then "
 });
@@ -122,14 +90,14 @@ formatter.match({
   "location": "formStep.navigateToFormPage(String)"
 });
 formatter.result({
-  "duration": 3338453645,
+  "duration": 2743392627,
   "status": "passed"
 });
 formatter.match({
   "location": "formStep.fillOutForm(DataTable)"
 });
 formatter.result({
-  "duration": 15637505740,
+  "duration": 7820637209,
   "status": "passed"
 });
 formatter.match({
@@ -142,18 +110,18 @@ formatter.match({
   "location": "formStep.submitForm(String)"
 });
 formatter.result({
-  "duration": 639179809,
+  "duration": 656450521,
   "status": "passed"
 });
 formatter.match({
   "location": "formStep.getResponsePage()"
 });
 formatter.result({
-  "duration": 38913127,
+  "duration": 34219684,
   "status": "passed"
 });
 formatter.after({
-  "duration": 284536,
+  "duration": 245396,
   "status": "passed"
 });
 });

@@ -8,6 +8,7 @@ import org.junit.Assert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.support.ui.Select;
+import org.testng.annotations.Test;
 
 import java.util.List;
 import java.util.Map;
@@ -68,9 +69,9 @@ public class toolsQaStep extends BaseUtil {
     public void submitToolsQaForm(String btn) throws Throwable {
         base.Driver.findElement(By.name(btn)).click();
     }
-
+//
 //    @Then("^I should see the submitted page$")
 //    public void getResponsePage() throws Throwable {
-////        Assert.assertTrue(base.Driver.getPageSource().contains("Test Selenium Forms"));
+//        Assert.assertTrue(base.Driver.getPageSource().contains("Test Selenium Forms"));
 //    }
 }

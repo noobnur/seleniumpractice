@@ -6,7 +6,7 @@
         "before": [
           {
             "result": {
-              "duration": 3544322512,
+              "duration": 3654436148,
               "status": "passed"
             },
             "match": {
@@ -17,11 +17,11 @@
         "line": 4,
         "name": "Fill out forms in google forms",
         "description": "",
-        "id": "forms;fill-out-forms-in-google-forms",
+        "id": "toolsqa;fill-out-forms-in-google-forms",
         "after": [
           {
             "result": {
-              "duration": 245396,
+              "duration": 123224684,
               "status": "passed"
             },
             "match": {
@@ -34,15 +34,15 @@
         "steps": [
           {
             "result": {
-              "duration": 2743392627,
+              "duration": 1608525695,
               "status": "passed"
             },
             "line": 5,
-            "name": "I navigate to the main form page here: \"https://goo.gl/qK4fDy\"",
+            "name": "I navigate to the main form page here: \"https://www.toolsqa.com/automation-practice-form/\"",
             "match": {
               "arguments": [
                 {
-                  "val": "https://goo.gl/qK4fDy",
+                  "val": "https://www.toolsqa.com/automation-practice-form/",
                   "offset": 40
                 }
               ],
@@ -52,95 +52,91 @@
           },
           {
             "result": {
-              "duration": 7820637209,
+              "duration": 1942689292,
               "status": "passed"
             },
             "line": 6,
-            "name": "I enter the following",
+            "name": "open the link \"Partial Link Test\" in a new tab",
             "match": {
-              "location": "formStep.fillOutForm(DataTable)"
+              "arguments": [
+                {
+                  "val": "Partial Link Test",
+                  "offset": 15
+                }
+              ],
+              "location": "toolsQaStep.openLinkInNewTab(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2797779368,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "I enter the following for toolsqa",
+            "match": {
+              "location": "toolsQaStep.fillOutToolsQaForm(DataTable)"
             },
             "rows": [
               {
                 "cells": [
-                  "radio",
-                  "checkbox",
-                  "Short answer",
-                  "Long answer",
-                  "Dropdown"
-                ],
-                "line": 7
-              },
-              {
-                "cells": [
-                  "Option 1",
-                  "Option 3",
-                  "This is my short cucumber answer hello",
-                  "This is my long long looooonnggg cucumber answer try again",
-                  "Dropdown 1"
+                  "firstname",
+                  "lastname",
+                  "sex",
+                  "experience",
+                  "date",
+                  "profession",
+                  "img",
+                  "download",
+                  "continent",
+                  "commands"
                 ],
                 "line": 8
               },
               {
                 "cells": [
-                  "Option 2",
-                  "Option 2",
-                  "This is my short cucumber answer wassup",
-                  "This is my long long looooonnggg cucumber answer",
-                  "Dropdown 2"
+                  "firstname",
+                  "lastname",
+                  "Female",
+                  "2",
+                  "130219",
+                  "Automation Tester",
+                  "mtc_2017.jpg",
+                  "Test File to Download",
+                  "South America",
+                  "Wait Commands"
                 ],
                 "line": 9
-              },
-              {
-                "cells": [
-                  "Option 3",
-                  "Option 1",
-                  "This is my short cucumber answer shortt",
-                  "This is my long long looooonnggg cucumber answer",
-                  "Dropdown 3"
-                ],
-                "line": 10
               }
             ],
             "keyword": "And "
           },
           {
             "result": {
-              "duration": 656450521,
+              "duration": 3354812460,
               "status": "passed"
             },
-            "line": 11,
-            "name": "I click \"Submit\" button",
+            "line": 10,
+            "name": "I click \"submit\" button toolsqa",
             "match": {
               "arguments": [
                 {
-                  "val": "Submit",
+                  "val": "submit",
                   "offset": 9
                 }
               ],
-              "location": "formStep.submitForm(String)"
+              "location": "toolsQaStep.submitToolsQaForm(String)"
             },
             "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 34219684,
-              "status": "passed"
-            },
-            "line": 12,
-            "name": "I should see the submitted page",
-            "match": {
-              "location": "formStep.getResponsePage()"
-            },
-            "keyword": "Then "
           }
         ]
       }
     ],
-    "name": "Forms",
+    "name": "ToolsQa",
     "description": "This feature deals with the basic usage forms input.",
-    "id": "forms",
+    "id": "toolsqa",
     "keyword": "Feature",
-    "uri": "src/main/java/feature/fillOutForms.feature"
+    "uri": "src/main/java/feature/toolsQa.feature"
   }
 ]

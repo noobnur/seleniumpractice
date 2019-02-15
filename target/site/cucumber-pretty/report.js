@@ -1,127 +1,123 @@
-$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("src/main/java/feature/fillOutForms.feature");
+$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("src/main/java/feature/toolsQa.feature");
 formatter.feature({
   "line": 1,
-  "name": "Forms",
+  "name": "ToolsQa",
   "description": "This feature deals with the basic usage forms input.",
-  "id": "forms",
+  "id": "toolsqa",
   "keyword": "Feature"
 });
 formatter.before({
-  "duration": 3544322512,
+  "duration": 3654436148,
   "status": "passed"
 });
 formatter.scenario({
   "line": 4,
   "name": "Fill out forms in google forms",
   "description": "",
-  "id": "forms;fill-out-forms-in-google-forms",
+  "id": "toolsqa;fill-out-forms-in-google-forms",
   "type": "scenario",
   "keyword": "Scenario"
 });
 formatter.step({
   "line": 5,
-  "name": "I navigate to the main form page here: \"https://goo.gl/qK4fDy\"",
+  "name": "I navigate to the main form page here: \"https://www.toolsqa.com/automation-practice-form/\"",
   "keyword": "Given "
 });
 formatter.step({
   "line": 6,
-  "name": "I enter the following",
+  "name": "open the link \"Partial Link Test\" in a new tab",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 7,
+  "name": "I enter the following for toolsqa",
   "rows": [
     {
       "cells": [
-        "radio",
-        "checkbox",
-        "Short answer",
-        "Long answer",
-        "Dropdown"
-      ],
-      "line": 7
-    },
-    {
-      "cells": [
-        "Option 1",
-        "Option 3",
-        "This is my short cucumber answer hello",
-        "This is my long long looooonnggg cucumber answer try again",
-        "Dropdown 1"
+        "firstname",
+        "lastname",
+        "sex",
+        "experience",
+        "date",
+        "profession",
+        "img",
+        "download",
+        "continent",
+        "commands"
       ],
       "line": 8
     },
     {
       "cells": [
-        "Option 2",
-        "Option 2",
-        "This is my short cucumber answer wassup",
-        "This is my long long looooonnggg cucumber answer",
-        "Dropdown 2"
+        "firstname",
+        "lastname",
+        "Female",
+        "2",
+        "130219",
+        "Automation Tester",
+        "mtc_2017.jpg",
+        "Test File to Download",
+        "South America",
+        "Wait Commands"
       ],
       "line": 9
-    },
-    {
-      "cells": [
-        "Option 3",
-        "Option 1",
-        "This is my short cucumber answer shortt",
-        "This is my long long looooonnggg cucumber answer",
-        "Dropdown 3"
-      ],
-      "line": 10
     }
   ],
   "keyword": "And "
 });
 formatter.step({
-  "line": 11,
-  "name": "I click \"Submit\" button",
+  "line": 10,
+  "name": "I click \"submit\" button toolsqa",
   "keyword": "And "
-});
-formatter.step({
-  "line": 12,
-  "name": "I should see the submitted page",
-  "keyword": "Then "
 });
 formatter.match({
   "arguments": [
     {
-      "val": "https://goo.gl/qK4fDy",
+      "val": "https://www.toolsqa.com/automation-practice-form/",
       "offset": 40
     }
   ],
   "location": "formStep.navigateToFormPage(String)"
 });
 formatter.result({
-  "duration": 2743392627,
-  "status": "passed"
-});
-formatter.match({
-  "location": "formStep.fillOutForm(DataTable)"
-});
-formatter.result({
-  "duration": 7820637209,
+  "duration": 1608525695,
   "status": "passed"
 });
 formatter.match({
   "arguments": [
     {
-      "val": "Submit",
-      "offset": 9
+      "val": "Partial Link Test",
+      "offset": 15
     }
   ],
-  "location": "formStep.submitForm(String)"
+  "location": "toolsQaStep.openLinkInNewTab(String)"
 });
 formatter.result({
-  "duration": 656450521,
+  "duration": 1942689292,
   "status": "passed"
 });
 formatter.match({
-  "location": "formStep.getResponsePage()"
+  "location": "toolsQaStep.fillOutToolsQaForm(DataTable)"
 });
 formatter.result({
-  "duration": 34219684,
+  "duration": 2797779368,
+  "status": "passed"
+});
+formatter.match({
+  "arguments": [
+    {
+      "val": "submit",
+      "offset": 9
+    }
+  ],
+  "location": "toolsQaStep.submitToolsQaForm(String)"
+});
+formatter.result({
+  "duration": 3354812460,
   "status": "passed"
 });
 formatter.after({
-  "duration": 245396,
+  "duration": 123224684,
   "status": "passed"
 });
 });

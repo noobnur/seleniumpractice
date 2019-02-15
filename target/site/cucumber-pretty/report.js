@@ -7,7 +7,7 @@ formatter.feature({
   "keyword": "Feature"
 });
 formatter.before({
-  "duration": 9907543031,
+  "duration": 18202192518,
   "status": "passed"
 });
 formatter.scenario({
@@ -80,7 +80,7 @@ formatter.match({
   "location": "formStep.navigateToFormPage(String)"
 });
 formatter.result({
-  "duration": 3102528655,
+  "duration": 6057531378,
   "status": "passed"
 });
 formatter.match({
@@ -93,14 +93,14 @@ formatter.match({
   "location": "toolsQaStep.openLinkInNewTab(String)"
 });
 formatter.result({
-  "duration": 10709976884,
+  "duration": 1426590107,
   "status": "passed"
 });
 formatter.match({
   "location": "toolsQaStep.fillOutToolsQaForm(DataTable)"
 });
 formatter.result({
-  "duration": 17476566534,
+  "duration": 17144698552,
   "status": "passed"
 });
 formatter.match({
@@ -113,11 +113,11 @@ formatter.match({
   "location": "toolsQaStep.submitToolsQaForm(String)"
 });
 formatter.result({
-  "duration": 3997149041,
+  "duration": 8936633855,
   "status": "passed"
 });
 formatter.after({
-  "duration": 180092316,
+  "duration": 174586709,
   "status": "passed"
 });
 });

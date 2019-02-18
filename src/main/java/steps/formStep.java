@@ -4,10 +4,12 @@ import Base.BaseUtil;
 import cucumber.api.DataTable;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
-import org.junit.Assert;
+//import org.junit.Assert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.Select;
+import org.testng.Assert;
+import org.testng.Reporter;
 
 import java.util.List;
 import java.util.Map;
@@ -47,7 +49,7 @@ public class formStep extends BaseUtil {
             base.Driver.findElement(By.xpath("//CONTENT[@class='quantumWizMenuPaperselectContent exportContent'][text()='Choose']")).click();
             base.Driver.findElement(By.xpath("//DIV[@data-value='"+dropdownInput+"']"));
 
-            System.out.println(i + "gg to submit");
+            Reporter.log(i + "gg to submit");
             if (i < list.size()-1) {
                 String btn = "Submit";
                 base.Driver.findElement(By.xpath("//SPAN[text()='" + btn + "']")).click();
@@ -65,6 +67,6 @@ public class formStep extends BaseUtil {
 
     @Then("^I should see the submitted page$")
     public void getResponsePage() throws Throwable {
-        Assert.assertTrue(base.Driver.getPageSource().contains("Test Selenium Forms"));
+        Assert.assertTrue(base.Driver.getPageSource().contains("Practice Automation Form"));
     }
 }

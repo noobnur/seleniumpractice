@@ -5,6 +5,7 @@
         <parameter name="myName"  value="true"/>
         <classes>
             <class name="runner.toolsQaRunner" />
+            <class name="runner.formRunner" />
         </classes>
     </test>
 </suite>

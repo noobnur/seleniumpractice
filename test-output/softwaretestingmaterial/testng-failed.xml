@@ -1,11 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite guice-stage="DEVELOPMENT" name="Failed suite [softwaretestingmaterial]">
-  <parameter name="myName" value="true"/>
-  <test name="testngTest">
+  <test thread-count="5" name="testngTest(failed)">
     <parameter name="myName" value="true"/>
     <classes>
-      <class name="runner.toolsQaRunner"/>
+      <class name="runner.formRunner">
+        <methods>
+          <include name="setUpClass"/>
+          <include name="feature" invocation-numbers="0"/>
+          <include name="tearDownClass"/>
+        </methods>
+      </class> <!-- runner.formRunner -->
     </classes>
-  </test> <!-- testngTest -->
+  </test> <!-- testngTest(failed) -->
 </suite> <!-- Failed suite [softwaretestingmaterial] -->

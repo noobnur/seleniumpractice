@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>testngTest</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>1/0/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>1/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Fri Feb 15 18:32:20 SGT 2019</td>
+<td>Started on:</td><td>Fri Feb 15 19:32:48 SGT 2019</td>
 </tr>
-<tr><td>Total time:</td><td>55 seconds (55475 ms)</td>
+<tr><td>Total time:</td><td>197 seconds (197705 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -67,6 +67,73 @@ function toggleAllBoxes() {
 </tr>
 </table><p/>
 <small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='runner.formRunner.feature()'><b>feature</b><br>Test class: runner.formRunner<br>Test method: Runs Cucumber Feature<br>Parameters: Forms<br/>
+<a href="#Output-295055909" onClick='toggleBox("Output-295055909", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-295055909" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-295055909">
+0gg to submit<br/>
+1gg to submit<br/>
+2gg to submit<br/>
+3gg to submit<br/>
+4gg to submit<br/>
+5gg to submit<br/>
+6gg to submit<br/>
+</div>
+</td>
+<td><div><pre>cucumber.runtime.CucumberException: java.lang.AssertionError: expected [true] but found [false]
+	at cucumber.api.testng.TestNGCucumberRunner.runCucumber(TestNGCucumberRunner.java:69)
+	at cucumber.api.testng.AbstractTestNGCucumberTests.feature(AbstractTestNGCucumberTests.java:21)
+Caused by: java.lang.AssertionError: expected [true] but found [false]
+	at steps.formStep.getResponsePage(formStep.java:70)
+	at ✽.Then I should see the submitted page(src/main/java/feature/fillOutForms.feature:16)
+... Removed 28 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace295055909", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace295055909'><pre>cucumber.runtime.CucumberException: java.lang.AssertionError: expected [true] but found [false]
+	at cucumber.api.testng.TestNGCucumberRunner.runCucumber(TestNGCucumberRunner.java:69)
+	at cucumber.api.testng.AbstractTestNGCucumberTests.feature(AbstractTestNGCucumberTests.java:21)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:72)
+	at org.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:123)
+Caused by: java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:96)
+	at org.testng.Assert.failNotEquals(Assert.java:776)
+	at org.testng.Assert.assertTrue(Assert.java:44)
+	at org.testng.Assert.assertTrue(Assert.java:54)
+	at steps.formStep.getResponsePage(formStep.java:70)
+	at ✽.Then I should see the submitted page(src/main/java/feature/fillOutForms.feature:16)
+</pre></div></td>
+<td>160</td>
+<td>runner.formRunner@668bc3d5</td></tr>
+</table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
 <tr><td><b>Test method</b></td>
@@ -77,8 +144,8 @@ function toggleAllBoxes() {
 <tr>
 <td title='runner.toolsQaRunner.feature()'><b>feature</b><br>Test class: runner.toolsQaRunner<br>Test method: Runs Cucumber Feature<br>Parameters: ToolsQa</td>
 <td></td>
-<td>52</td>
-<td>runner.toolsQaRunner@3fb6a447</td></tr>
+<td>35</td>
+<td>runner.toolsQaRunner@380fb434</td></tr>
 </table><p>
 </body>
 </html>

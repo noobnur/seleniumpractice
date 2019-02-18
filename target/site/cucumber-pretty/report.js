@@ -1,123 +1,168 @@
-$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("src/main/java/feature/toolsQa.feature");
+$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("src/main/java/feature/fillOutForms.feature");
 formatter.feature({
   "line": 1,
-  "name": "ToolsQa",
+  "name": "Forms",
   "description": "This feature deals with the basic usage forms input.",
-  "id": "toolsqa",
+  "id": "forms",
   "keyword": "Feature"
 });
 formatter.before({
-  "duration": 18202192518,
+  "duration": 2266552861,
   "status": "passed"
 });
 formatter.scenario({
   "line": 4,
   "name": "Fill out forms in google forms",
   "description": "",
-  "id": "toolsqa;fill-out-forms-in-google-forms",
+  "id": "forms;fill-out-forms-in-google-forms",
   "type": "scenario",
   "keyword": "Scenario"
 });
 formatter.step({
   "line": 5,
-  "name": "I navigate to the main form page here: \"https://www.toolsqa.com/automation-practice-form/\"",
+  "name": "I navigate to the main form page here: \"https://goo.gl/qK4fDy\"",
   "keyword": "Given "
 });
 formatter.step({
   "line": 6,
-  "name": "open the link \"Partial Link Test\" in a new tab",
-  "keyword": "And "
-});
-formatter.step({
-  "line": 7,
-  "name": "I enter the following for toolsqa",
+  "name": "I enter the following",
   "rows": [
     {
       "cells": [
-        "firstname",
-        "lastname",
-        "sex",
-        "experience",
-        "date",
-        "profession",
-        "img",
-        "download",
-        "continent",
-        "commands"
+        "radio",
+        "checkbox",
+        "Short answer",
+        "Long answer",
+        "Dropdown"
+      ],
+      "line": 7
+    },
+    {
+      "cells": [
+        "Option 1",
+        "Option 3",
+        "This is my short cucumber answer hello",
+        "This is my long long looooonnggg cucumber answer try again",
+        "Dropdown 1"
       ],
       "line": 8
     },
     {
       "cells": [
-        "firstname",
-        "lastname",
-        "Female",
-        "2",
-        "130219",
-        "Automation Tester",
-        "mtc_2017.jpg",
-        "Test File to Download",
-        "South America",
-        "Wait Commands"
+        "Option 2",
+        "Option 2",
+        "This is my short cucumber answer wassup",
+        "This is my long long looooonnggg cucumber answer",
+        "Dropdown 2"
       ],
       "line": 9
+    },
+    {
+      "cells": [
+        "Option 3",
+        "Option 1",
+        "This is my short cucumber answer shortt",
+        "This is my long long looooonnggg cucumber answer",
+        "Dropdown 3"
+      ],
+      "line": 10
+    },
+    {
+      "cells": [
+        "Option 1",
+        "Option 1",
+        "This is my short cucumber answer mehhh",
+        "This is my long long looooonnggg cucumber answer",
+        "Dropdown 1"
+      ],
+      "line": 11
+    },
+    {
+      "cells": [
+        "Option 2",
+        "Option 2",
+        "This is my short cucumber answer I ate",
+        "This is my long long looooonnggg cucumber answer",
+        "Dropdown 2"
+      ],
+      "line": 12
+    },
+    {
+      "cells": [
+        "Option 3",
+        "Option 3",
+        "This is my short cucumber answer too muc",
+        "This is my long long looooonnggg cucumber answer",
+        "Dropdown 3"
+      ],
+      "line": 13
+    },
+    {
+      "cells": [
+        "Option 1",
+        "Option 3",
+        "This is my short cucumber answer h today",
+        "This is my long long looooonnggg cucumber answer",
+        "Dropdown 2"
+      ],
+      "line": 14
     }
   ],
   "keyword": "And "
 });
 formatter.step({
-  "line": 10,
-  "name": "I click \"submit\" button toolsqa",
+  "line": 15,
+  "name": "I click \"Submit\" button",
   "keyword": "And "
+});
+formatter.step({
+  "line": 16,
+  "name": "I should see the submitted page",
+  "keyword": "Then "
 });
 formatter.match({
   "arguments": [
     {
-      "val": "https://www.toolsqa.com/automation-practice-form/",
+      "val": "https://goo.gl/qK4fDy",
       "offset": 40
     }
   ],
   "location": "formStep.navigateToFormPage(String)"
 });
 formatter.result({
-  "duration": 6057531378,
+  "duration": 2669723290,
+  "status": "passed"
+});
+formatter.match({
+  "location": "formStep.fillOutForm(DataTable)"
+});
+formatter.result({
+  "duration": 154839362362,
   "status": "passed"
 });
 formatter.match({
   "arguments": [
     {
-      "val": "Partial Link Test",
-      "offset": 15
-    }
-  ],
-  "location": "toolsQaStep.openLinkInNewTab(String)"
-});
-formatter.result({
-  "duration": 1426590107,
-  "status": "passed"
-});
-formatter.match({
-  "location": "toolsQaStep.fillOutToolsQaForm(DataTable)"
-});
-formatter.result({
-  "duration": 17144698552,
-  "status": "passed"
-});
-formatter.match({
-  "arguments": [
-    {
-      "val": "submit",
+      "val": "Submit",
       "offset": 9
     }
   ],
-  "location": "toolsQaStep.submitToolsQaForm(String)"
+  "location": "formStep.submitForm(String)"
 });
 formatter.result({
-  "duration": 8936633855,
+  "duration": 949827184,
   "status": "passed"
 });
+formatter.match({
+  "location": "formStep.getResponsePage()"
+});
+formatter.result({
+  "duration": 38370956,
+  "error_message": "java.lang.AssertionError: expected [true] but found [false]\n\tat org.testng.Assert.fail(Assert.java:96)\n\tat org.testng.Assert.failNotEquals(Assert.java:776)\n\tat org.testng.Assert.assertTrue(Assert.java:44)\n\tat org.testng.Assert.assertTrue(Assert.java:54)\n\tat steps.formStep.getResponsePage(formStep.java:70)\n\tat ✽.Then I should see the submitted page(src/main/java/feature/fillOutForms.feature:16)\n",
+  "status": "failed"
+});
 formatter.after({
-  "duration": 174586709,
+  "duration": 113955484,
   "status": "passed"
 });
 });

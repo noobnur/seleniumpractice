@@ -8,3 +8,4 @@ Feature: ToolsQa
       | firstname    | lastname  | sex    | experience | date   | profession        | img          | download              | continent     | commands      |
       | firstname    | lastname  | Female | 2          | 130219 | Automation Tester | mtc_2017.jpg | Test File to Download | South America | Wait Commands |
     And I click "submit" button toolsqa
+    Then I should see the submitted page
